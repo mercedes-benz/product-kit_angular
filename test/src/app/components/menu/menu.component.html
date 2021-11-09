@@ -1,0 +1,20 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<div class="section-header">
+  <div class="hyperlink">
+    <a mat-button href="https://material.angular.io/components/menu/overview" target="_blank" rel="noopener noreferrer">
+      Menu
+      <i class="material-icons">open_in_new</i>
+    </a>
+  </div>
+</div>
+<div class="component-wrapper">
+  <button mat-raised-button [matMenuTriggerFor]="menu" color="primary">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item class="mat-body-2">Body 2</button>
+    <button mat-menu-item class="mat-body-2">Body 2</button>
+    <button mat-menu-item class="mat-body-2">Body 2</button>
+    <button mat-menu-item class="mat-body-2">Body 2</button>
+  </mat-menu>
+</div>

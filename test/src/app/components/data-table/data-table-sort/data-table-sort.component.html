@@ -1,0 +1,16 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<div class="component-wrapper">
+  <table (matSortChange)="sortData($event)" class="data-table" matSort>
+    <tr>
+      <th mat-sort-header="title" class="mat-body-2">Subtitle 2</th>
+      <th mat-sort-header="index" class="mat-body-2">Subtitle 2</th>
+    </tr>
+
+    <tr *ngFor="let data of sortedData">
+      <td class="mat-body-2">{{ data.title }}</td>
+      <td class="mat-body-2 table-cell-numeric">{{ data.index }}</td>
+    </tr>
+  </table>
+</div>

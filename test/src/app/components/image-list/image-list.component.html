@@ -1,0 +1,39 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<div class="section-header">
+  <div class="hyperlink">
+    <a mat-button href="https://material.angular.io/components/grid-list/overview" target="_blank" rel="noopener noreferrer">
+      Image List
+      <i class="material-icons">open_in_new</i>
+    </a>
+  </div>
+</div>
+
+<mat-grid-list class="grid-list" cols="2" rowHeight="73px" gutterSize="16px">
+  <mat-grid-tile
+    *ngFor="let tile of tiles"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+  >
+    <div fxLayout="column" fxLayoutAlign="start stretch" fxFill>
+      <img alt="None" src="{{ tile.src }}" />
+      <mat-grid-tile-footer class="tile-footer-text">
+        <h6 class="mat-subheading-2">{{ tile.text }}</h6>
+      </mat-grid-tile-footer>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list class="grid-list" cols="2" rowHeight="155" gutterSize="4px">
+  <div *ngFor="let tile of uniformTiles">
+    <mat-grid-tile>
+      <div fxLayout="column" fxLayoutAlign="start stretch">
+        <img alt="none" src="{{ tile.src }}" fxFlexFill />
+        <div class="tile-footer tile-footer-text">
+          <h6 class="mat-subheading-2">{{ tile.text }}</h6>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </div>
+</mat-grid-list>

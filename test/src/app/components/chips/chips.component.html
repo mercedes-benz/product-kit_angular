@@ -1,0 +1,46 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<div class="section-header">
+  <div class="hyperlink">
+    <a mat-button href="https://material.angular.io/components/chips/overview" target="_blank" rel="noopener noreferrer">
+      Chips
+      <i class="material-icons">open_in_new</i>
+    </a>
+  </div>
+</div>
+<div class="chips-component-wrapper">
+  <mat-chip-list>
+    <mat-chip class="mat-body-2">Body 2</mat-chip>
+    <mat-chip class="mat-body-2">Body 2</mat-chip>
+    <mat-chip class="mat-body-2">Body 2</mat-chip>
+  </mat-chip-list>
+</div>
+
+<div class="chips-component-wrapper">
+  <mat-chip-list>
+    <mat-chip
+      class="mat-body-2"
+      *ngFor="let chip of chips"
+      [selected]="chip.selected"
+      (click)="chip.selected = !chip.selected"
+    >
+      <mat-icon class="leading-icon" *ngIf="chip.selected">done</mat-icon>
+      <span>{{ chip.text }}</span>
+    </mat-chip>
+  </mat-chip-list>
+</div>
+
+<div class="chips-component-wrapper">
+  <mat-chip-list>
+    <mat-chip
+      class="mat-body-2"
+      *ngFor="let chip of cancellableChips"
+      [selected]="chip.selected"
+      (click)="chip.selected = !chip.selected"
+    >
+      <span>{{ chip.text }}</span>
+      <mat-icon class="trailing-icon">cancel</mat-icon>
+    </mat-chip>
+  </mat-chip-list>
+</div>

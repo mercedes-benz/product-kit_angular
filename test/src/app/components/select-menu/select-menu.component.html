@@ -1,0 +1,81 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<div class="section-header">
+  <div class="hyperlink">
+    <a mat-button href="https://material.angular.io/components/select/overview" target="_blank" rel="noopener noreferrer">
+      Select
+      <i class="material-icons">open_in_new</i>
+    </a>
+  </div>
+</div>
+<form
+  [formGroup]="formGroup"
+  class="component-wrapper"
+  fxLayout="row"
+  fxLayoutAlign="space-between start"
+>
+  <div fxLayout="column" fxLayoutAlign="space-between center">
+    <mat-form-field class="field" appearance="fill">
+      <mat-label>Subtitle 1/Caption</mat-label>
+      <mat-select>
+        <mat-option>None</mat-option>
+        <mat-option value="option1">Body 2</mat-option>
+        <mat-option value="option2" [disabled]="true">Body 2</mat-option>
+        <mat-option value="option3">Body 2</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="field" appearance="fill">
+      <mat-label>Subtitle 1/Caption</mat-label>
+      <mat-select formControlName="selectMenuFilledError">
+        <mat-option>None</mat-option>
+        <mat-option value="option1">Body 2</mat-option>
+        <mat-option value="option2" [disabled]="true">Body 2</mat-option>
+        <mat-option value="option3">Body 2</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="field" appearance="fill">
+      <mat-label>Subtitle 1/Caption</mat-label>
+      <mat-select disabled>
+        <mat-option>None</mat-option>
+        <mat-option value="option1">Body 2</mat-option>
+        <mat-option value="option2" [disabled]="true">Body 2</mat-option>
+        <mat-option value="option3">Body 2</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div fxLayout="column" fxLayoutAlign="space-between center">
+    <mat-form-field class="field" appearance="outline">
+      <mat-label>Subtitle 1/Caption</mat-label>
+      <mat-select>
+        <mat-option>None</mat-option>
+        <mat-option value="option1">Body 2</mat-option>
+        <mat-option value="option2" [disabled]="true">Body 2</mat-option>
+        <mat-option value="option3">Body 2</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="field" appearance="outline">
+      <mat-label>Subtitle 1/Caption</mat-label>
+      <mat-select formControlName="selectMenuOutlineError">
+        <mat-option>None</mat-option>
+        <mat-option value="option1">Body 2</mat-option>
+        <mat-option value="option2" [disabled]="true">Body 2</mat-option>
+        <mat-option value="option3">Body 2</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="field" appearance="outline">
+      <mat-label>Subtitle 1/Caption</mat-label>
+      <mat-select disabled>
+        <mat-option>None</mat-option>
+        <mat-option value="option1">Body 2</mat-option>
+        <mat-option value="option2" [disabled]="true">Body 2</mat-option>
+        <mat-option value="option3">Body 2</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</form>

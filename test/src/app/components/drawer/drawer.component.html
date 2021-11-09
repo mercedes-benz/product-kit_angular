@@ -1,0 +1,76 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<div class="section-header">
+  <div class="hyperlink">
+    <a mat-button href="https://material.angular.io/components/sidenav/overview" target="_blank" rel="noopener noreferrer">
+      Drawer
+      <i class="material-icons">open_in_new</i>
+    </a>
+  </div>
+</div>
+<div class="component-wrapper">
+  <mat-drawer-container class="component-wrapper container" fxFlex>
+    <mat-drawer class="drawer mat-elevation-z8" mode="side" opened>
+      <div class="title-container">
+        <h3 class="mat-title">Headline 6</h3>
+        <h6 class="mat-body-2 body-content">Body 2</h6>
+      </div>
+      <hr />
+      <nav fxLayout="row">
+        <div
+          class="nav-items"
+          fxFlex="auto"
+          fxLayout="column"
+          fxLayoutAlign="space-between stretch"
+        >
+          <div class="item" [class.active]="isItemActive('inbox')">
+            <button
+              mat-button
+              (click)="setActiveItem('inbox')"
+              fxFlex
+              fxLayoutAlign="start stretch"
+            >
+              <mat-icon>inbox</mat-icon>
+              <span class="mat-body-2 item-text">Body 2</span>
+            </button>
+          </div>
+          <div class="item" [class.active]="isItemActive('star')">
+            <button mat-button (click)="setActiveItem('star')" fxFlex fxLayoutAlign="start stretch">
+              <mat-icon>star</mat-icon>
+              <span class="mat-body-2 item-text">Body 2</span>
+            </button>
+          </div>
+          <div class="item" [class.active]="isItemActive('bookmark')">
+            <button
+              mat-button
+              (click)="setActiveItem('bookmark')"
+              fxFlex
+              fxLayoutAlign="start stretch"
+            >
+              <mat-icon>bookmark</mat-icon>
+              <span class="mat-body-2 item-text">Body 2</span>
+            </button>
+          </div>
+          <div class="item" [class.active]="isItemActive('send')">
+            <button mat-button (click)="setActiveItem('send')" fxFlex fxLayoutAlign="start stretch">
+              <mat-icon>send</mat-icon>
+              <span class="mat-body-2 item-text">Body 2</span>
+            </button>
+          </div>
+          <div class="item" [class.active]="isItemActive('drafts')">
+            <button
+              mat-button
+              (click)="setActiveItem('drafts')"
+              fxFlex
+              fxLayoutAlign="start stretch"
+            >
+              <mat-icon>drafts</mat-icon>
+              <span class="mat-body-2 item-text">Body 2</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </mat-drawer>
+  </mat-drawer-container>
+</div>

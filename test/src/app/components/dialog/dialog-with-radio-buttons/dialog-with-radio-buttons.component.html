@@ -1,0 +1,27 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<button mat-raised-button color="primary" (click)="openDialog()">Open</button>
+<ng-template #dialogTemplate>
+  <kit-dialog-content>
+    <div dialogTitle>{{ title }}</div>
+    <div dialogContent>
+      <mat-radio-group
+        class="radio-group"
+        aria-label="Select an option"
+        fxLayout="column"
+        fxLayoutAlign="space-between start"
+      >
+        <mat-radio-button class="item" color="accent" [checked]="false" value="1">
+          <h6 class="mat-subheading-2">Subtitle 1</h6>
+        </mat-radio-button>
+        <mat-radio-button class="item" color="accent" [checked]="false" value="1">
+          <h6 class="mat-subheading-2">Subtitle 1</h6>
+        </mat-radio-button>
+        <mat-radio-button class="item" color="accent" [checked]="true" value="2">
+          <h6 class="mat-subheading-2">Subtitle 1</h6>
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </kit-dialog-content>
+</ng-template>

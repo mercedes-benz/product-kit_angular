@@ -1,0 +1,132 @@
+// © Daimler TSS GmbH
+// SPDX-License-Identifier: MIT
+@use '~@angular/material/theming' as material;
+@use '~@daimler/productkit-core/styles/scss/variables' as tokens;
+@use '~@daimler/productkit-core/utils/scss/utils' as utils;
+
+$application: utils.map-deep-get(tokens.$tokens, "color", "application");
+$daimler-tss-theme-primary: material.mat-palette($application, "primary");
+$daimler-tss-theme-secondary: material.mat-palette($application, "secondary");
+$daimler-tss-theme-tertiary: material.mat-palette($application, "tertiary");
+$daimler-tss-theme-quaternary: material.mat-palette($application, "quaternary");
+$daimler-tss-theme-background: material.mat-palette($application, "background");
+$daimler-tss-theme-surface: material.mat-palette($application, "surface");
+$daimler-tss-theme-error: material.mat-palette($application, "error");
+$daimler-tss-theme-outline: material.mat-palette($application, "outline");
+
+$typography: material.mat-typography-config(
+  $font-family: unquote("SourceSansPro, sans-serif"),
+  $display-4:
+    material.mat-typography-level(
+      tokens.$font-application-l-headline1-font-size,
+      tokens.$font-application-l-headline1-line-height,
+      tokens.$font-weight-light,
+      null,
+      tokens.$font-application-l-headline1-letter-spacing
+    ),
+  $display-3:
+    material.mat-typography-level(
+      tokens.$font-application-l-headline2-font-size,
+      tokens.$font-application-l-headline2-line-height,
+      tokens.$font-weight-light,
+      null,
+      tokens.$font-application-l-headline2-letter-spacing
+    ),
+  $display-2:
+    material.mat-typography-level(
+      tokens.$font-application-l-headline3-font-size,
+      tokens.$font-application-l-headline3-line-height,
+      tokens.$font-weight-light,
+      null,
+      tokens.$font-application-l-headline3-letter-spacing
+    ),
+  $display-1:
+    material.mat-typography-level(
+      tokens.$font-application-l-headline4-font-size,
+      tokens.$font-application-l-headline4-line-height,
+      tokens.$font-weight-regular,
+      null,
+      tokens.$font-application-l-headline4-letter-spacing
+    ),
+  $headline:
+    material.mat-typography-level(
+      tokens.$font-application-l-headline5-font-size,
+      tokens.$font-application-l-headline5-line-height,
+      tokens.$font-weight-regular,
+      null,
+      tokens.$font-application-l-headline5-letter-spacing
+    ),
+  $title:
+    material.mat-typography-level(
+      tokens.$font-application-l-headline6-font-size,
+      tokens.$font-application-l-headline6-line-height,
+      tokens.$font-weight-regular,
+      null,
+      tokens.$font-application-l-headline6-letter-spacing
+    ),
+  $subheading-2:
+    material.mat-typography-level(
+      tokens.$font-application-l-subtitle1-font-size,
+      tokens.$font-application-l-subtitle1-line-height,
+      tokens.$font-weight-regular,
+      null,
+      tokens.$font-application-l-subtitle1-letter-spacing
+    ),
+  $subheading-1:
+    material.mat-typography-level(
+      tokens.$font-application-l-subtitle2-font-size,
+      tokens.$font-application-l-subtitle2-line-height,
+      tokens.$font-weight-regular,
+      null,
+      tokens.$font-application-l-subtitle2-letter-spacing
+    ),
+  $body-1:
+    material.mat-typography-level(
+      tokens.$font-application-l-body1-font-size,
+      tokens.$font-application-l-body1-line-height,
+      tokens.$font-weight-regular,
+      null,
+      tokens.$font-application-l-body1-letter-spacing
+    ),
+  $body-2:
+    material.mat-typography-level(
+      tokens.$font-application-l-body2-font-size,
+      tokens.$font-application-l-body2-line-height,
+      tokens.$font-weight-regular,
+      null,
+      tokens.$font-application-l-body2-letter-spacing
+    ),
+  $button:
+    material.mat-typography-level(
+      tokens.$font-application-l-button-font-size,
+      tokens.$font-application-l-button-line-height,
+      tokens.$font-weight-regular
+    ),
+  $caption:
+    material.mat-typography-level(
+      tokens.$font-application-l-caption-font-size,
+      tokens.$font-application-l-caption-line-height,
+      tokens.$font-weight-regular,
+      null,
+      tokens.$font-application-l-caption-letter-spacing
+    )
+);
+
+$daimler-tss-theme: material.mat-light-theme(
+  (
+    color: (
+      primary: $daimler-tss-theme-primary,
+      accent: $daimler-tss-theme-secondary,
+      warn: $daimler-tss-theme-error
+    )
+  )
+);
+
+@mixin overline {
+  font-size: tokens.$font-application-l-overline-font-size;
+  line-height: tokens.$font-application-l-overline-line-height;
+  font-weight: tokens.$font-application-l-overline-font-weight;
+  letter-spacing: tokens.$font-application-l-overline-letter-spacing;
+  color: material.mat-color($daimler-tss-theme-secondary);
+  text-transform: uppercase;
+}

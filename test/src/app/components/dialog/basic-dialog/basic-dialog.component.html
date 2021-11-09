@@ -1,0 +1,11 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<button mat-raised-button color="primary" (click)="openDialog()">Open</button>
+
+<ng-template #dialogTemplate>
+  <kit-dialog-content>
+    <div dialogTitle>{{ title }}</div>
+    <div dialogContent>{{ content }}</div>
+  </kit-dialog-content>
+</ng-template>

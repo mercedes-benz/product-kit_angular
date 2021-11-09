@@ -1,0 +1,22 @@
+{
+  "name": "@daimler/productkit-angular",
+  "description": "Product Kit for Angular provides web components for Daimler TSS web frontends based on Angular Material",
+  "version": "0.9.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Daimler/product-kit_angular"
+  },
+  "bugs": {
+    "url": "https://github.com/Daimler/product-kit_angular/issues"
+  },
+  "dependencies": {
+    "@angular/material": "^11.2.13",
+    "@daimler/productkit-core": "^1.0.6"
+  },
+  "keywords": [
+    "Angular",
+    "Material"
+  ],
+  "author": "Shubhang Sattur"
+}

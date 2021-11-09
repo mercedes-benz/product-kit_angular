@@ -1,0 +1,44 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<div class="section-header">
+  <div class="hyperlink">
+    <a mat-button href="https://material.angular.io/components/tabs/overview" target="_blank" rel="noopener noreferrer">
+      Tabs
+      <i class="material-icons">open_in_new</i>
+    </a>
+  </div>
+</div>
+<mat-tab-group class="tab-group">
+  <mat-tab label="Button"></mat-tab>
+  <mat-tab label="Button"></mat-tab>
+  <mat-tab label="Button"></mat-tab>
+  <mat-tab label="Button"></mat-tab>
+</mat-tab-group>
+
+<mat-tab-group class="tab-group">
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <div fxLayout="column" fxLayoutAlign="space-between center">
+        <mat-icon class="icon">star</mat-icon>
+        <span class="button">Button</span>
+      </div>
+    </ng-template>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <div fxLayout="column" fxLayoutAlign="space-between center">
+        <mat-icon class="icon">bookmark</mat-icon>
+        <span class="button">Button</span>
+      </div>
+    </ng-template>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <div fxLayout="column" fxLayoutAlign="space-between center">
+        <mat-icon class="icon">send</mat-icon>
+        <span class="button">Button</span>
+      </div>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>

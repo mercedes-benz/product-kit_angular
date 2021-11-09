@@ -1,0 +1,15 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<mat-dialog-content>
+  <h6 mat-dialog-title>
+    <ng-content select="[dialogTitle]"></ng-content>
+  </h6>
+  <div class="mat-body-2 content">
+    <ng-content select="[dialogContent]"></ng-content>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions fxLayoutAlign="end center">
+  <button mat-button (click)="onButtonClick()" color="primary">Button</button>
+  <button mat-button color="primary">Button</button>
+</mat-dialog-actions>

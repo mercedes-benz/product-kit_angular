@@ -1,0 +1,391 @@
+// © Daimler TSS GmbH
+// SPDX-License-Identifier: MIT
+@use '~@angular/material/theming' as material;
+@use '~@daimler/productkit-core/styles/scss/variables' as tokens;
+@use 'globals' as globals;
+@use 'material-core';
+
+.mat-button,
+.mat-raised-button,
+.mat-stroked-button {
+  border-radius: 0 !important;
+  border: 0;
+  color: material.mat-color(globals.$daimler-tss-theme-primary) !important;
+  letter-spacing: tokens.$font-application-l-button-letter-spacing;
+  text-transform: uppercase;
+
+  .material-icons {
+    font-size: 18px;
+    margin-right: 8px;
+
+    &.leading-icon {
+      padding-left: 0;
+    }
+  }
+}
+
+.mat-raised-button {
+  background-color: material.mat-color(globals.$daimler-tss-theme-primary) !important;
+}
+
+.mat-raised-button {
+  color: material.mat-color(globals.$daimler-tss-theme-primary, default-contrast) !important;
+}
+
+.mat-stroked-button {
+  border: 1px solid material.mat-color(globals.$daimler-tss-theme-primary) !important;
+}
+
+.extended-fab-button {
+  width: 140px !important;
+  height: 48px !important;
+  border-radius: 29px !important;
+  text-transform: uppercase;
+
+  .mat-icon {
+    margin-right: 8px !important;
+  }
+
+  .mat-button-wrapper {
+    padding: 0 !important;
+  }
+}
+
+.mat-selection-list .mat-list-item-content {
+  display: flex !important;
+}
+
+.mat-list-item-content {
+  display: inline !important;
+}
+
+.mat-progress-bar-fill::after {
+  background-color: material.mat-color(globals.$daimler-tss-theme-primary);
+}
+
+.mat-progress-bar-background {
+  background-color: material.mat-color(globals.$daimler-tss-theme-outline);
+}
+
+.mat-slider {
+  $background-color: material.mat-color(
+      globals.$daimler-tss-theme-secondary,
+      default,
+      tokens.$opacity-application-surface-low
+  );
+
+  .mat-slider-track-background {
+    background-color: $background-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .mat-slider-track-background {
+      background-color: $background-color;
+    }
+  }
+}
+
+.toolbar {
+  padding: 0 8px 0 8px !important;
+  color: material.mat-color(globals.$daimler-tss-theme-primary, default-contrast) !important;
+}
+
+// Snack bar
+.mat-snack-bar-container {
+  border-radius: 0 !important;
+  background-color: material.mat-color(globals.$daimler-tss-theme-surface, default-contrast) !important;
+}
+
+.mat-simple-snackbar {
+  font-size: 16px !important;
+  color: material.mat-color(globals.$daimler-tss-theme-surface) !important;
+}
+
+.mat-simple-snackbar-action {
+  .mat-button {
+    color: material.mat-color(globals.$daimler-tss-theme-quaternary) !important;
+  }
+}
+
+.mat-card {
+  border-radius: 0 !important;
+  background-color: material.mat-color(globals.$daimler-tss-theme-surface) !important;
+
+  .mat-title {
+    color: material.mat-color(
+        globals.$daimler-tss-theme-surface,
+        default-contrast,
+        tokens.$opacity-application-text-high
+    ) !important;
+  }
+
+  .mat-body-2 {
+    color: material.mat-color(
+        globals.$daimler-tss-theme-surface,
+        default-contrast,
+        tokens.$opacity-application-text-medium
+    ) !important;
+  }
+}
+
+// select-menu and text fields
+.mat-form-field-flex {
+  border-radius: 0 !important;
+}
+
+.mat-select-panel,
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: material.mat-color(globals.$daimler-tss-theme-surface) !important;
+  border-radius: 0 !important;
+}
+
+.mat-form-field-outline-start,
+.mat-form-field-outline-end {
+  border-radius: 0 !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-start,
+.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-end,
+.mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-gap {
+  border-width: 1px !important;
+}
+
+.mat-form-field-appearance-outline.mat-focused
+.mat-form-field-outline-thick
+.mat-form-field-outline-start,
+.mat-form-field-appearance-outline.mat-focused
+.mat-form-field-outline-thick
+.mat-form-field-outline-end,
+.mat-form-field-appearance-outline.mat-focused
+.mat-form-field-outline-thick
+.mat-form-field-outline-gap {
+  border-width: 2px !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: material.mat-color(
+      globals.$daimler-tss-theme-background,
+      default-contrast,
+      tokens.$opacity-application-surface-low
+  ) !important;
+}
+
+.mat-form-field-outline {
+  .mat-icon {
+    color: material.mat-color(
+        globals.$daimler-tss-theme-surface,
+        default-contrast,
+        tokens.$opacity-application-icon-medium
+    ) !important;
+  }
+}
+
+// Text field ink color
+.mat-form-field {
+  input.mat-input-element,
+  textarea.mat-input-element,
+  .mat-form-field-label {
+    color: material.mat-color(
+        globals.$daimler-tss-theme-surface,
+        default-contrast,
+        tokens.$opacity-application-text-high
+    ) !important;
+  }
+
+  .mat-form-field-wrapper .mat-form-field-outline {
+    color: material.mat-color(globals.$daimler-tss-theme-outline) !important;
+
+    &:hover {
+      color: material.mat-color(
+          globals.$daimler-tss-theme-outline,
+          default-contrast
+      ) !important;
+    }
+  }
+}
+
+.mat-form-field-invalid {
+  .mat-form-field-label {
+    color: material.mat-color(globals.$daimler-tss-theme-error) !important;
+  }
+}
+
+.mat-form-field-disabled {
+  .mat-icon {
+    color: material.mat-color(
+        globals.$daimler-tss-theme-surface,
+        default-contrast,
+        tokens.$opacity-application-icon-low
+    ) !important;
+  }
+
+  input.mat-input-element,
+  textarea.mat-input-element,
+  .mat-form-field-label {
+    color: material.mat-color(
+        globals.$daimler-tss-theme-surface,
+        default-contrast,
+        tokens.$opacity-application-text-low
+    ) !important;
+  }
+
+  .mat-form-field-wrapper .mat-form-field-outline {
+    color: material.mat-color(
+        globals.$daimler-tss-theme-outline,
+        default,
+        tokens.$opacity-application-surface-low
+    ) !important;
+  }
+
+}
+
+.mat-form-field-appearance-outline.mat-form-field-invalid .mat-form-field-outline {
+  .mat-icon {
+    color: material.mat-color(globals.$daimler-tss-theme-error) !important;
+  }
+
+  color: material.mat-color(globals.$daimler-tss-theme-error) !important;
+}
+
+.mat-focused .mat-form-field-underline .mat-form-field-ripple {
+  background-color: material.mat-color(globals.$daimler-tss-theme-primary) !important;
+}
+
+.mat-form-field-underline .mat-form-field-ripple {
+  background-color: material.mat-color(globals.$daimler-tss-theme-outline, default-contrast) !important;
+}
+
+.mat-form-field-invalid .mat-form-field-underline .mat-form-field-ripple {
+  background-color: material.mat-color(globals.$daimler-tss-theme-error) !important;
+}
+
+.mat-select-panel-wrap{
+  position: relative;
+  top: 52px;
+}
+
+.mat-select-panel-wrap .mat-select-panel{
+  min-width: 160px !important;
+  transform: translateX(4px) !important
+}
+
+// table
+table {
+  border: 1px solid material.mat-color(globals.$daimler-tss-theme-outline) !important;
+  border-spacing: 0 !important;
+}
+
+tr {
+  height: 52px !important;
+}
+
+th,
+td {
+  width: auto !important;
+  padding: 0 16px !important;
+  color: material.mat-color(
+      globals.$daimler-tss-theme-background,
+      default-contrast,
+      tokens.$opacity-application-text-high
+  ) !important;
+  font-size: tokens.$font-application-l-subtitle2-font-size !important;
+}
+
+th {
+  background-color: material.mat-color(globals.$daimler-tss-theme-surface) !important;
+  font-weight: tokens.$font-weight-bold !important;
+  border: none !important;
+}
+
+td {
+  border-top: 1px solid material.mat-color(globals.$daimler-tss-theme-outline) !important;
+  border-bottom: none !important;
+}
+
+// Drawer
+.mat-drawer {
+  background-color: material.mat-color(globals.$daimler-tss-theme-surface) !important;
+}
+
+// tabs
+.mat-tab-header {
+  border-bottom: none !important;
+}
+
+.mat-tab-label {
+  padding: 0 !important;
+  min-width: 40px !important;
+  width: 126px !important;
+  height: 62px !important;
+  text-transform: uppercase;
+}
+
+.mat-tab-label.mat-tab-label-active {
+  color: material.mat-color(globals.$daimler-tss-theme-primary);
+}
+
+.mat-dialog-container {
+  background-color: material.mat-color(globals.$daimler-tss-theme-surface) !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.mat-dialog-title {
+  padding-top: 20px !important;
+  padding-bottom: 9px !important;
+  vertical-align: bottom !important;
+}
+
+.mat-dialog-actions {
+  margin: 0 !important;
+  padding: 8px !important;
+}
+
+.mat-dialog-content {
+  margin: 0 !important;
+  padding: 0 24px 20px 24px;
+  height: calc(100% - 52px) !important;
+}
+
+// Chips
+.mat-chip {
+  background-color: material.mat-color(globals.$daimler-tss-theme-surface) !important;
+
+  .mat-icon {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+
+.mat-chip {
+  color: material.mat-color(
+      globals.$daimler-tss-theme-surface,
+      default-contrast,
+      tokens.$opacity-application-text-high
+  ) !important;
+}
+
+.mat-chip-selected {
+  color: material.mat-color(globals.$daimler-tss-theme-primary) !important;
+}
+
+// Menu
+.mat-menu-content {
+  background-color: material.mat-color(globals.$daimler-tss-theme-surface) !important;
+}
+
+// Use Overline mixin as overline typography does not exists in Angular material
+.overline {
+  @include globals.overline;
+}
+
+h3 {
+  margin: 0 !important;
+}
+
+h6 {
+  margin: 0 !important;
+}

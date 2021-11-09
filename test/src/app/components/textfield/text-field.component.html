@@ -1,0 +1,151 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<div class="section-header">
+  <div class="hyperlink">
+    <a mat-button href="https://material.angular.io/cdk/text-field/overview" target="_blank" rel="noopener noreferrer">
+      Text field
+      <i class="material-icons">open_in_new</i>
+    </a>
+  </div>
+</div>
+<div class="component-wrapper">
+  <div>
+    <div class="field-element">
+      <mat-form-field appearance="outline">
+        <mat-label>Subtitle 1/Caption</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" />
+        <mat-icon matSuffix class="icon-cursor" (click)="hide = !hide">
+          {{ hide ? "visibility_off" : "visibility" }}
+        </mat-icon>
+        <mat-hint>Caption</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="outline">
+        <mat-label>Subtitle 1/Caption</mat-label>
+        <mat-icon matPrefix>phone</mat-icon>
+        <input matInput placeholder="Subtitle 1/Caption" />
+        <mat-icon matSuffix class="icon-cursor">clear</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="outline">
+        <mat-label>Subtitle 1/Caption</mat-label>
+        <input matInput placeholder="Subtitle 1/Caption" [formControl]="outlineField" />
+        <mat-icon matSuffix *ngIf="outlineField.invalid" class="error-icon">error</mat-icon>
+        <mat-error *ngIf="outlineField.invalid">Caption</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="outline">
+        <mat-label>Subtitle 1/Caption</mat-label>
+        <input matInput type="text" value="Input Text" disabled />
+        <mat-icon matSuffix>clear</mat-icon>
+        <mat-hint>Caption</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="outline">
+        <input matInput type="text" value="Subtitle 1/Caption" disabled />
+        <mat-hint>Caption</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="fill">
+        <mat-label>Subtitle 1/Caption</mat-label>
+        <input matInput />
+        <mat-hint>Caption</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="fill">
+        <mat-label>Subtitle 1/Caption</mat-label>
+        <mat-icon matPrefix>event</mat-icon>
+        <input matInput />
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="fill">
+        <mat-label>Subtitle 1/Caption</mat-label>
+        <input matInput placeholder="Subtitle 1/Caption" [formControl]="filledField" />
+        <mat-icon matSuffix *ngIf="filledField.invalid" class="error-icon">error</mat-icon>
+        <mat-error *ngIf="filledField.invalid">Caption</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="fill" floatLabel="always">
+        <mat-label>Subtitle 1/Caption</mat-label>
+        <span matPrefix>$&nbsp;</span>
+        <input matInput class="align-text" placeholder="0" />
+        <span matSuffix>.00</span>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="fill">
+        <mat-label>Subtitle 1/Caption</mat-label>
+        <input matInput value="Input Text" disabled />
+        <mat-hint>Caption</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="fill">
+        <mat-label>Subtitle 1/Caption</mat-label>
+        <input matInput disabled />
+        <mat-hint>Caption</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="outline">
+        <mat-label>Caption</mat-label>
+        <textarea matInput rows="4" cols="40" value="Subtitle 1"></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="fill">
+        <mat-label>Caption</mat-label>
+        <textarea matInput rows="4" cols="40" value="Subtitle 1"></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="outline">
+        <mat-label>Caption</mat-label>
+        <textarea matInput rows="4" cols="40" [formControl]="outlineTextArea"> </textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="fill">
+        <mat-label>Caption</mat-label>
+        <textarea matInput rows="4" cols="40" [formControl]="outlineTextArea"> </textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="outline">
+        <mat-label>Caption</mat-label>
+        <textarea matInput rows="4" cols="40" value="Subtitle 1" disabled></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="field-element">
+      <mat-form-field appearance="fill">
+        <mat-label>Caption</mat-label>
+        <textarea matInput rows="4" cols="40" value="Subtitle 1" disabled></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+</div>

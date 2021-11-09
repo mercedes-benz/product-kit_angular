@@ -1,0 +1,16 @@
+<!-- © Daimler TSS GmbH-->
+<!-- SPDX-License-Identifier: MIT-->
+
+<mat-toolbar
+  class="toolbar mat-elevation-z5"
+  color="primary"
+  fxLayout="row"
+  fxLayoutAlign="space-between center"
+>
+  <div class="menu-header">
+    <ng-content select="[header]"></ng-content>
+  </div>
+  <div>
+    <ng-content select="[body]"></ng-content>
+  </div>
+</mat-toolbar>
