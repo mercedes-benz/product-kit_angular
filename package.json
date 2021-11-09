@@ -1,7 +1,7 @@
 {
   "name": "@daimler/productkit-angular",
   "description": "Product Kit for Angular provides web components for Daimler TSS web frontends based on Angular Material",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
