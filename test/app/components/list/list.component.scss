@@ -1,0 +1,37 @@
+// © Daimler TSS GmbH
+// SPDX-License-Identifier: MIT
+
+@import "../../../styles.scss";
+
+.list {
+  margin-bottom: 30px;
+
+  .icon {
+    padding-right: 20px;
+  }
+}
+
+.mat-list-item {
+  width: 100% !important;
+  height: 72px !important;
+  padding: 0 8px !important;
+}
+
+.separated-list {
+  .mat-list-item,
+  .mat-list-option {
+    height: 56px !important;
+    padding: 0 16px !important;
+    margin: 0;
+    border-bottom: 1px solid mat-color($daimler-tss-theme-outline);
+  }
+
+  .mat-list-item:last-child,
+  .mat-list-option:last-child {
+    border: none;
+  }
+
+  .list-item-icon {
+    margin-right: 32px !important;
+  }
+}

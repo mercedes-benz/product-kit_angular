@@ -1,8 +1,8 @@
 // © Daimler TSS GmbH
 // SPDX-License-Identifier: MIT
 @use '~@angular/material/theming' as material;
-@use '~@daimler/productkit-core/styles/scss/variables' as tokens;
-@use '~@daimler/productkit-core/utils/scss/utils' as utils;
+@use '~@daimler/productkit-core/exports/web/styles/scss/variables' as tokens;
+@use '~@daimler/productkit-core/exports/web/utils/scss/utils' as utils;
 
 $application: utils.map-deep-get(tokens.$tokens, "color", "application");
 $daimler-tss-theme-primary: material.mat-palette($application, "primary");

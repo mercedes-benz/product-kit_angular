@@ -1,7 +1,7 @@
 // © Daimler TSS GmbH
 // SPDX-License-Identifier: MIT
 @use '~@angular/material/theming' as material;
-@use '~@daimler/productkit-core/styles/scss/variables' as tokens;
+@use '~@daimler/productkit-core/exports/web/styles/scss/variables' as tokens;
 @use 'globals' as globals;
 @use 'material-core';
 

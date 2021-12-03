@@ -4,8 +4,8 @@
 ![Product Kit Angular Logo](https://github.com/Daimler/product-kit_angular/raw/main/docs/images/productkit_angular_github_logo.png)
 [![license](https://img.shields.io/badge/license-MIT-38de03e?style=flat)](LICENSE)
 [![npm](https://img.shields.io/npm/v/@daimler/productkit-angular)](https://www.npmjs.com/package/@daimler/productkit-angular)
-![angular version](https://img.shields.io/badge/angular-v11.0.6-a6120d?style=flat&logo=angular)
-![angular-material](https://img.shields.io/badge/angular--material-v11.2.13-3c4eb5?&style=flat)
+![angular version](https://img.shields.io/badge/angular-v12.1.4-a6120d?style=flat&logo=angular)
+![angular-material](https://img.shields.io/badge/angular--material-v12.1.4-3c4eb5?&style=flat)
 
 Product Kit for Angular provides web components for Daimler TSS web frontends based on Angular Material.
 
