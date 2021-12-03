@@ -1,4 +1,4 @@
-name: React Package Publishing
+name: Angular Package Publishing
 
 on:
   release:
