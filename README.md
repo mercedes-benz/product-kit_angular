@@ -20,9 +20,18 @@ npm install @daimler/productkit-angular --save-prod
 ```
 
 Once installed, simply add the following import in your styles.scss, and you are good to go: 
+
 ```
-@import '@daimler/productkit-angular/src/theme/scss/styles';
+@use '~@daimler/productkit-angular/src/theme/scss/styles';
 ```
+
+Or use the following instead:
+
+```
+@import '~@daimler/productkit-angular/src/theme/scss/styles';
+```
+
+*For styling and theme to work in your project, Anglar Material must be installed as a dependency.*
 
 Note: If your project already has styling or uses prebuilt-themes please update the angular.json 
 and styling files to use styles from Product Kit for Angular.
