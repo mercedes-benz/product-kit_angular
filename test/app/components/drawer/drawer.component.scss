@@ -18,7 +18,7 @@
   .mat-icon {
     height: fit-content;
     color: mat-color(
-      $daimler-tss-theme-surface,
+      $mbti-theme-surface,
       default-contrast,
       $opacity-application-icon-medium
     );
@@ -37,21 +37,21 @@
     }
 
     &.active {
-      background-color: mat-color($daimler-tss-theme-quaternary, default-contrast, 0.13);
+      background-color: mat-color($mbti-theme-quaternary, default-contrast, 0.13);
 
       .item-text {
-        color: mat-color($daimler-tss-theme-primary) !important;
+        color: mat-color($mbti-theme-primary) !important;
       }
 
       .mat-icon {
-        color: mat-color($daimler-tss-theme-primary);
+        color: mat-color($mbti-theme-primary);
       }
     }
   }
 
   .body-content {
     color: mat-color(
-      $daimler-tss-theme-background,
+      $mbti-theme-background,
       default-contrast,
       $opacity-application-text-medium
     ) !important;
@@ -59,7 +59,7 @@
 
   .item-text {
     color: mat-color(
-      $daimler-tss-theme-surface,
+      $mbti-theme-surface,
       default-contrast,
       $opacity-application-text-high
     ) !important;

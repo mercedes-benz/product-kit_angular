@@ -4,4 +4,4 @@
 @use '~@angular/material/theming' as material;
 
 @include material.mat-core($typography);
-@include material.angular-material-theme($daimler-tss-theme);
+@include material.angular-material-theme($mbti-theme);

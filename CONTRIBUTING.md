@@ -1,4 +1,4 @@
-<!-- © Daimler TSS GmbH --->
+<!-- © Mercedes-Benz Tech Innovation GmbH --->
 <!-- SPDX-License-Identifier: MIT --->
 # Contributing
 
@@ -13,7 +13,7 @@ By contributing you will agree that your contribution will be put under the same
 
 ## Communication
 
-For communication please respect our [FOSS Code of Conduct](https://github.com/Daimler/daimler-foss/blob/master/CODE_OF_CONDUCT.md).
+For communication please respect our [FOSS Code of Conduct](https://github.com/mercedes-benz/foss/blob/master/CODE_OF_CONDUCT.md).
 
 The following communication channels exist for this project:
 - Non-personal mailbox: <!-- <mailto:...> -->
@@ -31,9 +31,9 @@ If you are new to contributing in Github, [First Contributions](https://github.c
 
 If you are employed at Daimler TSS please complete the FOSS Drivers License `Contribute` before you make a contribution.
 
-If you need something changed or have a suggestion for improvement specific to Angular Material styles or themes open an issue [here](https://github.com/Daimler/product-kit_angular/issues).
+If you need something changed or have a suggestion for improvement specific to Angular Material styles or themes open an issue [here](https://github.com/mercedes-benz/product-kit_angular/issues).
 
-Also note this project depends on Product Kit Core which defines a style dictionary and any issues or suggestions for improvement have to be addressed [here](https://github.com/Daimler/product-kit_core/issues).
+Also note this project depends on Product Kit Core which defines a style dictionary and any issues or suggestions for improvement have to be addressed [here](https://github.com/mercedes-benz/product-kit_core/issues).
 
 ## Quality
 

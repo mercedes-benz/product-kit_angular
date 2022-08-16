@@ -1,62 +1,42 @@
 {
   "name": "@daimler/productkit-angular",
-  "description": "Product Kit for Angular provides web components for Daimler TSS web frontends based on Angular Material",
+  "description": "Product Kit for Angular provides web components for Mercedes-Benz Tech Innovation web frontends based on Angular Material",
   "version": "1.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Daimler/product-kit_angular"
+    "url": "https://github.com/mercedes-benz/product-kit_angular"
   },
   "bugs": {
-    "url": "https://github.com/Daimler/product-kit_angular/issues"
+    "url": "https://github.com/mrcedes-benz/product-kit_angular/issues"
   },
   "scripts": {
     "ng": "ng",
     "test": "ng serve",
     "unit-test": "(cd test && ng test)",
-    "lint": "(cd test && ng lint)",
-    "e2e": "(cd test && ng e2e)"
+    "lint": "(cd test && ng lint)"
   },
   "dependencies": {
-    "@angular/animations": "~12.1.4",
+    "@angular/material": "^12.1.4",
+    "@daimler/productkit-core": "^2.0.0"
+  },
+  "devDependencies": {
+    "@angular/platform-browser": "~12.1.4",
+    "@angular/platform-browser-dynamic": "~12.1.4",
+    "@angular/router": "~12.1.4",
     "@angular/cdk": "^12.1.4",
     "@angular/common": "~12.1.4",
     "@angular/compiler": "~12.1.4",
     "@angular/core": "~12.1.4",
     "@angular/flex-layout": "^12.0.0-beta.34",
     "@angular/forms": "~12.1.4",
-    "@angular/material": "^12.1.4",
-    "@angular/platform-browser": "~12.1.4",
-    "@angular/platform-browser-dynamic": "~12.1.4",
-    "@angular/router": "~12.1.4",
-    "@daimler/productkit-core": "^1.0.6",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.11.4"
-  },
-  "devDependencies": {
     "@angular-devkit/build-angular": "~12.1.4",
     "@angular/cli": "~12.1.4",
     "@angular/compiler-cli": "~12.1.4",
-    "@types/jasmine": "~3.6.0",
-    "@types/node": "^12.11.1",
-    "codelyzer": "^6.0.0",
-    "eol-converter-cli": "^1.0.8",
-    "jasmine-core": "^3.8.1",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~6.3.4",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.0.3",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "prettier": "^2.3.2",
-    "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
     "typescript": "~4.3.5"
   },
   "keywords": [
     "Angular",
     "Material"
-  ],
-  "author": "Shubhang Sattur"
+  ]
 }

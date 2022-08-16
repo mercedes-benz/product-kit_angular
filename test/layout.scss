@@ -31,11 +31,11 @@
       align-items: center;
       text-decoration: none;
       padding: 0;
-      color: mat-color($daimler-tss-theme-background, default-contrast, 0.38) !important;
+      color: mat-color($mbti-theme-background, default-contrast, 0.38) !important;
 
       &:hover,
       &:focus {
-        color: mat-color($daimler-tss-theme-background, default-contrast, 0.87) !important;
+        color: mat-color($mbti-theme-background, default-contrast, 0.87) !important;
         text-decoration: none;
       }
     }
