@@ -1,4 +1,3 @@
-// © Daimler TSS GmbH
 // SPDX-License-Identifier: MIT
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';

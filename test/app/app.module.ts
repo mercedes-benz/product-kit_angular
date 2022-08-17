@@ -1,4 +1,3 @@
-// © Daimler TSS GmbH
 // SPDX-License-Identifier: MIT
 
 import { BrowserModule, Title } from '@angular/platform-browser';

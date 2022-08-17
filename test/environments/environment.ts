@@ -1,4 +1,3 @@
-// © Daimler TSS GmbH
 // SPDX-License-Identifier: MIT
 
 // This file can be replaced during build by using the `fileReplacements` array.
