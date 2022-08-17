@@ -4,7 +4,7 @@
 ![Product Kit Angular Logo](docs/images/pk_angular_title_image.png)
 [![license](https://img.shields.io/badge/license-MIT-38de03e?style=flat)](LICENSE)
 [![npm](https://img.shields.io/npm/v/@daimler/productkit-angular)](https://www.npmjs.com/package/@daimler/productkit-angular)
-![angular version](https://img.shields.io/badge/angular-v12.1.4-a6120d?style=flat&logo=angular)
+![angular version](https://img.shields.io/badge/angular-v13.3.11-a6120d?style=flat&logo=angular)
 ![angular-material](https://img.shields.io/badge/angular--material-v12.1.4-3c4eb5?&style=flat)
 
 Product Kit for Angular provides web components for Mercedes-Benz Tech Innovation web frontends based on Angular Material.
