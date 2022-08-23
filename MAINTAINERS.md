@@ -1,10 +1,9 @@
-<!-- © Daimler TSS GmbH --->
+<!-- © Mercedes-Benz Tech Innovation --->
 <!-- SPDX-License-Identifier: MIT --->
 # Product Kit for Angular Maintainers
 
 ## Maintainers
 
-| Maintainer       | Email                           | GitHub ID                                 | Affiliation                                                                                       | Joined     |
-| -----------------| ------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------- | 
-| Shubhang Sattur | shubhang.sattur@daimler.com  | [shubhangsattur](https://github.com/ShubhangSattur) | Daimler TSS GmbH, [imprint](https://github.com/Daimler/daimler-foss/blob/master/LEGAL_IMPRINT.md) | 2021-07-28 |
-| Sten Anderßen | sten.anderssen@daimler.com | [stenanderssen](https://github.com/stenanderssen) | Daimler TSS GmbH, [imprint](https://github.com/Daimler/daimler-foss/blob/master/LEGAL_IMPRINT.md) | 2021-07-28 |
+| Maintainer    | Email                          | GitHub ID                                         | Affiliation                                                                                                       | Joined     |
+|---------------|--------------------------------|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|------------|
+| Sten Anderßen | sten.anderssen@mercedes-benz.com     | [stenanderssen](https://github.com/stenanderssen) | Mercedes-Benz Tech Innovation GmbH, [Imprint](https://github.com/mercedes-benz/foss/blob/master/PROVIDER_INFORMATION.md) | 2021-07-28 |

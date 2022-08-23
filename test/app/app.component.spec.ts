@@ -1,4 +1,3 @@
-// © Daimler TSS GmbH
 // SPDX-License-Identifier: MIT
 
 import { TestBed } from '@angular/core/testing';
@@ -8,10 +7,7 @@ import { AppOverviewComponent } from './components/app-overview/app-overview.com
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        AppComponent,
-        AppOverviewComponent
-      ]
+      declarations: [AppComponent, AppOverviewComponent]
     }).compileComponents();
   });
 
