@@ -1,34 +1,33 @@
-name: Angular Package Publishing
+name: NPM Publishing
 
 on:
-  release:
-    types: [created]
   workflow_dispatch:
-     inputs:
-       tags:
-         description: 'NPM publish'
-    
+  workflow_call:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: ☁ Checkout
+        uses: actions/checkout@v2
+      - name: ⬇ Install npm
+        uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 16
       - run: npm ci
-
-
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: ☁ Checkout
+        uses: actions/checkout@v2
+      - name: ⬇ Install npm
+        uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish --access public
+      - name: 👑 Publish npm package
+        run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.TSS_NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.MBTI_NPM_TOKEN}}
