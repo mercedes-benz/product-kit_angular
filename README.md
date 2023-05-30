@@ -1,6 +1,9 @@
 <!-- © Mercedes-Benz Tech Innovation GmbH --->
 <!-- SPDX-License-Identifier: MIT --->
 
+> **Note** <br>
+> This repository is not actively maintained anymore.
+
 ![Product Kit Angular Logo](docs/images/pk_angular_title_image.png)
 [![license](https://img.shields.io/badge/license-MIT-38de03e?style=flat)](LICENSE)
 [![npm](https://img.shields.io/npm/v/@daimler/productkit-angular)](https://www.npmjs.com/package/@daimler/productkit-angular)
